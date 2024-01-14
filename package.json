@@ -1,0 +1,38 @@
+{
+  "name": "app-name",
+  "version": "1.0.0",
+  "description": "App Description",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/app-name",
+    "local": "NODE_ENV=local nodemon ./bin/app-name",
+    "development": "NODE_ENV=development nodemon ./bin/app-name",
+    "production": "NODE_ENV=production nodemon ./bin/app-name"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "bcrypt": "^5.0.0",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.1.1",
+    "debug": "~2.6.9",
+    "dotenv": "^8.2.0",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "joi": "^17.6.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "moment": "^2.29.3",
+    "mongoose": "^5.7.14",
+    "multer": "^1.4.5-lts.1",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.1"
+  },
+  "author": "Iqbal",
+  "license": "MIT"
+}

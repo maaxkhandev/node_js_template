@@ -1,0 +1,150 @@
+:root {
+  --themeColor: #2d323d;
+  --themeColorLight: #545a68;
+  --fontColor: #131310;
+}
+
+body {
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins';
+}
+
+body.login-page-body {
+  background: url('/img/background2.jpg') no-repeat center;
+  height: 100vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body.login-page-body::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: -1;
+}
+
+.login-page-wrapper {
+  text-align: center;
+  width: 100%;
+}
+
+.login-card {
+  background: white;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px 0px black;
+  margin-top: 1em;
+  text-align: center;
+  overflow: hidden;
+}
+
+.login-card-heading {
+  padding: 1em;
+}
+
+.login-card-body {
+  padding: 1em;
+}
+
+.login-logo {
+  height: 100px;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+  min-height: 100vh;
+  margin-left: -15em;
+  -webkit-transition: margin 0.25s ease-out;
+  -moz-transition: margin 0.25s ease-out;
+  -o-transition: margin 0.25s ease-out;
+  transition: margin 0.25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+  padding: 0.875rem 1.25rem;
+  font-size: 1.2rem;
+}
+
+#sidebar-wrapper .list-group {
+  width: 15rem;
+}
+
+#page-content-wrapper {
+  min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+  margin-left: 0;
+}
+
+.sidebar-logo {
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  #sidebar-wrapper {
+    margin-left: 0;
+  }
+
+  #page-content-wrapper {
+    min-width: 0;
+    width: 100%;
+  }
+
+  #wrapper.toggled #sidebar-wrapper {
+    margin-left: -15rem;
+  }
+}
+.parsley-errors-list {
+  margin-bottom: 0;
+  list-style: none;
+  padding: 0;
+}
+
+.parsley-errors-list li {
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.9em;
+  color: darkred;
+}
+
+.bg-theme {
+  background-color: var(--themeColor);
+}
+
+a.list-group-item:hover {
+  background-color: var(--themeColorLight) !important;
+}
+
+.btn-theme {
+  background-color: var(--themeColor);
+  color: white;
+}
+
+.btn-theme:hover {
+  background-color: var(--themeColorLight) !important;
+  color: white;
+}
+
+.btn-theme-secondary {
+  border: 1px solid var(--themeColor);
+  background-color: transparent;
+  color: var(--themeColor);
+}
+.dropdown-item.active {
+  background-color: var(--themeColorLight);
+}
+table thead th {
+  background-color: var(--themeColorLight);
+  color: white;
+}
